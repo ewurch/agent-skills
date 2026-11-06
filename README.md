@@ -4,6 +4,7 @@ My personal skills for coding agents. Deliberately tiny.
 
 - `taste`: what matters to me when building software. Loads on any coding work.
 - `dispatch-issues`: my issue dispatch workflow. Opt-in; runs only when invoked.
+- `review-prs`: my PR review workflow. Opt-in; runs only when invoked.
 
 Install and update with the [skills](https://github.com/vercel-labs/skills) CLI:
 

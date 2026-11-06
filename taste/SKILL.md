@@ -1,6 +1,6 @@
 ---
 name: taste
-description: Eduardo's taste for building software. Load before planning, writing or reviewing code, and before asking him to decide anything.
+description: My taste for building software. Load before planning, writing or reviewing code, and before asking me to decide anything.
 ---
 
 # Taste
