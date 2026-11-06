@@ -17,7 +17,11 @@ Assess each issue against the current code, related work and my intended outcome
 
 ## Child instructions
 
-Load the taste skill and use applicable Superpowers skills throughout the work. Use superpowers:brainstorming to refine the agreed scope with the user in this session. Build on settled decisions and get approval for new or revised design choices before implementing them.
+Load the taste skill and use applicable Superpowers skills throughout the work. For superpowers:brainstorming, use taste's question format and this sequence:
+
+1. Read the issue and relevant code, then give a short, plain-language brief: what the issue is about, the problem it solves, what you found, and what changes in practice. Include the agreed scope and concrete examples that help me understand the choices.
+2. Present the unresolved product choices to me. Each question has concrete options, their practical trade-offs, an example where useful, and your recommendation with its reason. Independent questions can be grouped; ask dependent questions one at a time so my answer shapes the next. Wait for my answers before settling those choices. Reuse settled decisions and existing patterns for routine implementation details; don't invent questions when none are needed.
+3. Summarize the agreed behavior in chat and get approval for any new or revised design before implementation. Write a design document only after those choices are settled, when the scope warrants one; it records our agreement. If a later review uncovers another product choice, bring it back to me in the same format.
 
 Keep previews, ports and test databases isolated to this worktree. Use synthetic test data by default; production-derived samples require explicit authorization and an isolated destination. Never expose secrets.
 
