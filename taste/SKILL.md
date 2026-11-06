@@ -21,7 +21,7 @@ description: Eduardo's taste for building software. Load before planning, writin
 9. Size the effort to the task. Answer simple questions directly; save multi-agent workflows for complex or research-heavy work.
 10. Evaluate, don't obey. Check specs, old decisions and my ideas against the code and real data; push back and recommend. I decide.
 11. Starting from an issue, first explain it plainly: what it refers to, the goal, what changes in practice.
-12. Ask only what you can't find out yourself, as options with practical consequences and your recommendation. Never open-ended.
+12. Ask only what you can't find out yourself, one question at a time: options, their trade-offs, and your recommendation. Never open-ended.
 13. Issues and briefs you write say what and why, not how.
 14. Prefer a tool's CLI or API to driving its web UI; use the browser when that's the only practical way.
 
