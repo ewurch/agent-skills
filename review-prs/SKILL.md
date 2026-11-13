@@ -5,7 +5,7 @@ description: 'Use only when the user explicitly invokes review-prs or says "use 
 
 # Review PRs
 
-You are the coordinator: start one independent reviewer per PR, bring me the verdict, merge only on my word or, for routine PRs, the PM's. When a PM runs (the pm skill; its address is in the project's memory or my message), your questions go to it first: `orca orchestration send --to <PM address> --type question`, with options, trade-offs and your recommendation; it answers or brings them to me. My word stands over its.
+You are the coordinator: start one independent reviewer per PR, bring me the verdict, merge only on my word or, for routine PRs, the PM's. When a PM runs (the pm skill; its address is in the project's memory or my message), your questions go to it first: `orca orchestration send --to <PM address> --from $ORCA_TERMINAL_HANDLE --type question`, with options, trade-offs and your recommendation; it answers or brings them to me. My word stands over its.
 
 1. A review starts when I ask or, when I ask you to keep watching, whenever a PR becomes ready: open, not a draft, CI green, nothing pushed for ~10 minutes and its author session idle. Watch every PR in the repo and every layer of a stack, each head once; recheck on a timer with whatever your tool offers. Red CI is reported, not reviewed.
 2. Check existing sessions and the PR's comments so no head is reviewed twice. One isolated worktree and agent session per PR (per layer of a stack), checked out at the PR head. Today: a supervised Orca worker, so the report comes back, running Claude Code with no model or effort override, unless I say otherwise. If that isn't available, ask; don't substitute.

@@ -5,7 +5,7 @@ description: 'Use only when the user explicitly invokes dispatch-issues or says 
 
 # Dispatch issues
 
-You are the dispatcher: start one independent session per issue or explicitly agreed slice, then step aside. When a PM runs (the pm skill; its address is in the project's memory or my message), you and each session bring your questions to it: `orca orchestration send --to <PM address> --type question`, with options, trade-offs and your recommendation, then end your turn until it replies. Without a PM, ask me. I can still talk to any session directly, and my word stands.
+You are the dispatcher: start one independent session per issue or explicitly agreed slice, then step aside. When a PM runs (the pm skill; its address is in the project's memory or my message), you and each session bring your questions to it: `orca orchestration send --to <PM address> --from $ORCA_TERMINAL_HANDLE --type question`, with options, trade-offs and your recommendation, then end your turn; its answer arrives as your next message. Without a PM, ask me. I can still talk to any session directly, and my word stands.
 
 Assess each issue against the current code, related work and my intended outcome. Question assumptions, unnecessary scope and decisions that appear inconsistent or outdated. When something doesn't make sense, explain the concern, its practical consequences and your recommended alternative before dispatching. Carry previous decisions forward when they still make sense; raise them again when you have a concrete reason to reconsider. I make the final decision.
 
@@ -18,7 +18,7 @@ Assess each issue against the current code, related work and my intended outcome
 
 ## Child instructions
 
-Load the taste skill and use applicable Superpowers skills throughout the work. When your brief names a PM, "me" below means the PM: send each brief and question to its address (`orca orchestration send --to <PM address> --type question`), then end your turn; Orca wakes you with the reply. If I step in here myself, my word stands. For superpowers:brainstorming, use taste's question format and this sequence:
+Load the taste skill and use applicable Superpowers skills throughout the work. When your brief names a PM, "me" below means the PM: send each brief and question to its address (`orca orchestration send --to <PM address> --from $ORCA_TERMINAL_HANDLE --type question`), then end your turn; its answer arrives as your next message. If I step in here myself, my word stands. For superpowers:brainstorming, use taste's question format and this sequence:
 
 1. Read the issue and relevant code, then give a short, plain-language brief: what the issue is about, the problem it solves, what you found, and what changes in practice. Include the agreed scope and concrete examples that help me understand the choices.
 2. Present the unresolved product choices to me. Each question has concrete options, their practical trade-offs, an example where useful, and your recommendation with its reason. Independent questions can be grouped; ask dependent questions one at a time so my answer shapes the next. Wait for my answers before settling those choices. Reuse settled decisions and existing patterns for routine implementation details; don't invent questions when none are needed.
