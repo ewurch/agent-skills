@@ -27,3 +27,5 @@ Load the taste skill and use applicable Superpowers skills throughout the work. 
 Keep previews, ports and test databases isolated to this worktree. Use synthetic test data by default; production-derived samples require explicit authorization and an isolated destination. Never expose secrets.
 
 Run checks appropriate to the change and a Ponytail audit before opening or updating the PR. Put verification results and inspected visual proof in the PR body, using durable links at the tested commit (phone and desktop for UI). State any skipped checks. Approval doesn't authorize merging or production changes.
+
+A green CI run still counts after main moves: update your branch with main only for a conflict, the project's own update rule, or once a broken main is fixed. After the PR is ready, push each round of fixes with it back in draft, so CI runs once per round. In a stack, keep every layer in draft and say on the top layer's PR when the stack is done.
